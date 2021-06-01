@@ -21,7 +21,7 @@ $siteName = 'BACCC Looking Glass';
 // Site URL
 $siteUrl = '';
 // Server location
-$serverLocation = 'United States';
+$serverLocation = 'In the clouds';
 // Test files
 $testFiles = array();
 $testFiles[] = 'tiny';

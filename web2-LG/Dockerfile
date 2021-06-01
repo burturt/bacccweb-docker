@@ -3,10 +3,6 @@ FROM php:7.2-fpm
 RUN apt-get update -y \
     && apt-get install -y nginx
 
-# Install network tools
-RUN apt-get install -y inetutils-ping traceroute mtr host
-
-
 # PHP_CPPFLAGS are used by the docker-php-ext-* scripts
 ENV PHP_CPPFLAGS="$PHP_CPPFLAGS -std=c++11"
 
@@ -40,6 +36,8 @@ RUN addgroup www-data tty
 RUN ln -sf /dev/stdout /var/log/nginx/access.log \
     && ln -sf /dev/stderr /var/log/nginx/error.log
 
+# Install network tools
+RUN apt-get install -y inetutils-ping traceroute mtr host procps
 
 RUN chown -R root:root /var/www/mysite 
 
