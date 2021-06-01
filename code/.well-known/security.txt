@@ -1,0 +1,5 @@
+# Our security email
+Contact: mailto:security@example.com
+
+# Our PGP key
+Encryption: /pgp-key-34536732aff78.txt
