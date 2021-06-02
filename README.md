@@ -7,4 +7,4 @@
 # web2 Looking Glass
 - Exploit is command injection. Users shouldn't be able to modify files, but there is no guarentee. Possible abuse.
 # web2 Looking Glass Offline
-- Commands outputs are faked. Allows running the machine on offline systems.
+- Commands outputs are faked. Allows running the machine on offline systems or systems where internet access/runtime length is metered.

@@ -1,7 +1,5 @@
 #!/bin/bash
 
-sleep 2
-
 if [[ $1 == '' ]] ; then
   echo "Invalid input." >&2
   exit 1
