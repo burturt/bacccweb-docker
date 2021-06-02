@@ -21,6 +21,9 @@ RUN { \
         echo 'opcache.enable_cli=1'; \
     } > /usr/local/etc/php/conf.d/php-opocache-cfg.ini
 
+# Install network tools
+RUN apt-get install -y inetutils-ping traceroute mtr host procps
+
 COPY site.conf /etc/nginx/sites-enabled/default
 COPY entrypoint.sh /etc/entrypoint.sh
 
@@ -35,9 +38,6 @@ RUN addgroup www-data tty
 
 RUN ln -sf /dev/stdout /var/log/nginx/access.log \
     && ln -sf /dev/stderr /var/log/nginx/error.log
-
-# Install network tools
-RUN apt-get install -y inetutils-ping traceroute mtr host procps
 
 RUN chown -R root:root /var/www/mysite 
 

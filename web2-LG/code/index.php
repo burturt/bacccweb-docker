@@ -69,6 +69,10 @@ if (file_exists('LookingGlass/Config.php')) {
         </div>
       </header>
 
+      <section id="vulnwarning">
+        <p style="color: red;"><strong>This is part of the Bay Cyber Advanced Summer Camp CTF. This applications has been made intentionally vulnerable. You may attack the web server but you may not use any automated tools (no nikto, dirbuster, etc). Do not attempt to attack anything except the web server service (gaining remote command execution is part of the challenge; escalating to root is not). All actions are logged.</strong></p>
+        <p>This challenge was created by Alec Machlis, adapted from <a href="http://github.com/telephone/LookingGlass">LookingGlass</a>.</p>
+
       <!-- Network Information -->
       <section id="information">
         <div class="row">
