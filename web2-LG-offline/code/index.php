@@ -72,7 +72,7 @@ if (file_exists('LookingGlass/Config.php')) {
       <section id="vulnwarning">
         <p style="color: red;"><strong>This is part of the Bay Cyber Advanced Summer Camp CTF. This applications has been made intentionally vulnerable. You may attack the web server but you may not use any automated tools (no nikto, dirbuster, etc). Do not attempt to attack anything except the web server service (gaining remote command execution is part of the challenge; escalating to root is not). All actions are logged.</strong></p>
         <p>This challenge was created by Alec Machlis, adapted from <a href="http://github.com/telephone/LookingGlass">LookingGlass</a>.</p>
-        <p>Note: because tryhackme machines do not have internet access, the command output is simulated and is not real.</p>
+        <p>Note: this is not a real looking glass server. Command output is simulated and is not real.</p>
 
       <!-- Network Information -->
       <section id="information">
