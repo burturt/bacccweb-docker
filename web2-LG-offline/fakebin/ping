@@ -18,17 +18,17 @@ function valid_ip()
 }
 
 
-if ! valid_ip $2; then
+if ! valid_ip $4; then
   echo "Invalid input." >&2
   exit 1
 fi
 
 
-echo "PING $2 ($2): 56 data bytes"
-echo "64 bytes from $1: icmp_seq=0 ttl=37 time=11.104 ms"
-echo "64 bytes from $1: icmp_seq=1 ttl=37 time=10.221 ms"
-echo "64 bytes from $1: icmp_seq=2 ttl=37 time=11.010 ms"
-echo "64 bytes from $1: icmp_seq=3 ttl=37 time=13.683 ms"
-echo "--- $2 ping statistics ---"
+echo "PING $4 ($4): 56 data bytes"
+echo "64 bytes from $4: icmp_seq=0 ttl=37 time=11.104 ms"
+echo "64 bytes from $4: icmp_seq=1 ttl=37 time=10.221 ms"
+echo "64 bytes from $4: icmp_seq=2 ttl=37 time=11.010 ms"
+echo "64 bytes from $4: icmp_seq=3 ttl=37 time=13.683 ms"
+echo "--- $4 ping statistics ---"
 echo "4 packets transmitted, 4 packets received, 0% packet loss"
 echo "round-trip min/avg/max/stddev = 10.221/11.505/13.683/1.304 ms"
