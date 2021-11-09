@@ -1,4 +1,4 @@
-# baccc competition docker images by alec
+# baccc competition docker images by burturt
 - By default container is a regular nginx + php dockerfile. Does not properly deal with IP logs by default; must set up docker networking properly to use
 	- In site.conf, remove the commented out lines at top to enable using header as IP if proxy is in front (i.e. Cloud Run)
 # web1 Recon
@@ -7,4 +7,4 @@
 # web2 Looking Glass
 - Exploit is command injection. Users shouldn't be able to modify files, but there is no guarentee. Possible abuse.
 # web2 Looking Glass Offline
-- Commands outputs are faked. Allows running the machine on offline systems or systems where internet access/runtime length is metered.
+- Commands outputs are faked. Allows running the machine on offline systems or systems where internet access/runtime length is metered or to prevent abuse on online systems (though this shouldn't be used to 100% protect it as users will have command injection access).
